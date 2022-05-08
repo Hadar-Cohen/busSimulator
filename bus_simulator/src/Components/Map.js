@@ -1,7 +1,8 @@
 import React from "react";
-import GoogleMapReact from 'google-map-react';
+import GoogleMapReact, {} from 'google-map-react';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import busImage from '../Images/bus.png'
+const AnyReactComponent = ({ text }) => <div><img src={busImage} style={{height:30, width: 50}}/></div>;
 
 export default function Map(){
   const defaultProps = {
@@ -24,7 +25,11 @@ export default function Map(){
   defaultZoom={11}
   yesIWantToUseGoogleMapApiInternals
   onGoogleApiLoaded={({ map, maps }) => handleApiLoaded(map, maps)}>
- 
+         <AnyReactComponent
+          lat={32.4365}
+          lng={34.9196}
+          text="My Marker"
+        />
 </GoogleMapReact>
     </div>
   );
