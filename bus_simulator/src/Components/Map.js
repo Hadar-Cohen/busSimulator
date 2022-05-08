@@ -1,4 +1,4 @@
-import React from "react";npm
+import React from "react";
 import GoogleMapReact from 'google-map-react';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
@@ -20,8 +20,8 @@ export default function Map(){
     <div style={{ height: '100vh', width: '100%' }}>
       <GoogleMapReact
   bootstrapURLKeys={{ key: 'AIzaSyCCwWKnfacKHx3AVajstMk6Ist1VUoNt9w' }}
-  defaultCenter={this.props.center}
-  defaultZoom={this.props.zoom}
+  defaultCenter={{lat: 32.4365, lng: 34.9196}}
+  defaultZoom={11}
   yesIWantToUseGoogleMapApiInternals
   onGoogleApiLoaded={({ map, maps }) => handleApiLoaded(map, maps)}>
  
