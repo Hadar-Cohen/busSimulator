@@ -2,7 +2,7 @@ import React from "react";
 import GoogleMapReact, {} from 'google-map-react';
 
 import busImage from '../Images/bus.png'
-const AnyReactComponent = ({ text }) => <div><img src={busImage} style={{height:30, width: 50}}/></div>;
+const AnyReactComponent = ({ text }) => <div><img src={busImage} style={{height:30, width: 50}}/></div>
 
 export default function Map(){
   const defaultProps = {
